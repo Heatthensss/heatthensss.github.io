@@ -1,2 +1,0 @@
-# heatthensss.github.io
-Portfolio
