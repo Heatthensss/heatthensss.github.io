@@ -1,0 +1,394 @@
+/* Police */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300|Monoton|Poppins:500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+
+}
+
+body {
+    background-color: #171717;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+#header {
+    background: #171717;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    pointer-events: none;
+}
+
+#about-section {
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    position: relative;
+}
+
+#about p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #ffffff;
+    margin-bottom: 20px;
+
+}
+
+#passion h2 {
+    font-family: poppins;
+    font-size: 30px;
+    font-weight: 500;
+    color: #c70039;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#passion h3 {
+    font-family: poppins;
+    font-size: 25px;
+    font-weight: 500;
+    color: #c70039;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#education, #competence, #projet {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    position: relative;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+}
+
+.navbar-logo {
+    border-radius: 50%;
+    width: 15%;
+    border: 2px solid #ffffff;
+    position: relative;
+}
+
+.header-content {
+    height: 100vh;
+    width: 100%;
+    color: whitesmoke;
+    font-family: raleway;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-content-box {
+    text-align: center;
+}
+
+.header-content .firstline {
+    font-weight: 700;
+    font-family: poppins;
+    font-size: 65px;
+}
+
+.header-content .secondline {
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, .8);
+}
+
+.contact{
+    font-size:var(--font-large);
+    margin:24px 0;
+}
+
+.contact i {
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.contact i:hover{
+    transform:scale(1.5);
+}
+
+.section{
+    background-color: #171717;
+    color:white;
+    width: 100%;
+    text-align:center;
+    padding: 50px;
+    margin:auto;
+}
+
+.section h1 {
+    font-size: 50px;
+    font-family: poppins;
+    margin-bottom: 20px;
+    color: #c70039;
+}
+
+.section h2 {
+    font-size: 35px;
+    font-family: poppins;
+    margin-bottom: 20px;
+    color: #c70039;
+
+}
+
+.section__container{
+    max-width: 1200px;
+    margin:auto;
+}
+
+
+.competences{
+    display:flex; 
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.competences-images{
+    width:170px; 
+    height: 170px; 
+    font-size:70px;
+    line-height:170px;
+    margin:auto;
+    border-radius: 50%;
+    margin-bottom:16px;
+}
+
+.competences-images:hover i {
+    color:orange;
+    transform:rotate(-30deg) scale(1.1);
+    padding : 20px;
+    border: solid 2px white;
+    border-radius: 60%;
+
+}
+
+.logo-ecole{
+    width:100px; 
+    height:100px;
+      margin:auto;
+}
+
+.ecole{
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.ecole-description{
+    margin:0 16px;
+    text-align:left;
+}
+
+.interet{
+    display:flex;
+    margin: 20px 0;
+    color:white;
+    background-color: #4d4d4d;
+    border-radius: 15px;
+}
+
+.interet-gauche{
+  flex-basis:60%;
+  padding:20px 40px;
+  background-color:#353434;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px 0 0 15px;
+}
+
+.interet-gauche p{
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 1.5;
+        color: #ffffff;
+        margin-bottom: 10px;
+        font-family: raleway;
+}
+
+.interet-droite a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.interet-droite a:hover{
+    color: orange;
+}
+
+.interet-droite p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.interet-droite{
+  flex-basis:40%;
+}
+
+
+
+.voyage{
+    background-color:#616161;
+    padding: 10px;
+    border-radius: 0 0 15px 0;
+}
+
+#projet {
+    max-width: 1200px;
+}
+
+.projet-container{
+    display:flex; 
+    flex-wrap:wrap;
+    justify-content: center;
+    width:80%; 
+    margin:auto;
+    opacity:1; 
+    transition: all var(--animation-duration) ease-out;
+}
+
+.projet-container.anim-out{
+    opacity:0; 
+    transform:scale(0.96) translateY(40px);
+
+}
+
+.project{
+    position:relative;
+    width:280px;
+    height:250px;
+    margin:2px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.project-img{
+    max-width:100%;
+    max-height:100%; 
+}
+
+.project-description{
+    position:absolute;
+    top:0;
+    left:0;
+    display:flex; 
+    flex-direction:column;
+    justify-content: center;
+    width:100%; 
+    height:100%; 
+    opacity:0;
+    transform:translateY(10px);
+    transition:all var(--animation-duration) ease-in;
+}
+
+.project:hover .project-description{
+    opacity: 0.8;
+    transform:translateY(0px);
+    background-color: #171717;
+    color: white;
+
+}
+
+.project-description h3:after{
+  content:"";
+  display:block;
+  position:relative;
+  left:50%;
+  width:50px; 
+  height:2px; 
+  transform:translateX(-50%);
+  margin-top:8px;
+}
+
+.arrow-up{
+    position:fixed;
+    bottom:50px; 
+    right:50px; 
+    width: 70px;
+    height:70px;
+    font-size:50px;
+    color:#f0f0f0;
+    border-radius: 50%;
+    opacity:0; 
+    pointer-events:none;
+    transition: all 300ms ease-in;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    transform: translate(50%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-size: 50px;
+    color: #fff;
+}
+
+.arrow:hover{
+    color: orange;
+}
+
+.card{
+    width: 325px;
+    background-color: #171717;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 16px;
+}
+
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content h3{
+    font-size: 15px;
+    color: #616161;
+    line-height: 1.3;
+}
