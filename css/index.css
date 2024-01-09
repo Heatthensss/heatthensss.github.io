@@ -364,6 +364,14 @@ body {
     color: orange;
 }
 
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
 .card{
     width: 325px;
     background-color: #171717;
