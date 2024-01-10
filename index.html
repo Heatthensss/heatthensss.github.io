@@ -14,7 +14,9 @@
             <div id="particles"></div>
             <div class="header-content">
                 <div class="header-content-box">
-                        <img src="images/Sans titre-1.png" alt="logo" class="navbar-logo">
+                    <img src="images/Sans titre-1.png" alt="logo" class="navbar-logo" id="image" 
+     onmouseover="changeImage('images/profile.png')" 
+     onmouseout="changeImage('images/Sans titre-1.png')">
                     <div class="firstline"><span style="color: #c70039">Thomas </span>Juet</div>
                     <div class="secondline">
                         Je suis
@@ -225,6 +227,14 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/index.js"></script>
+
+    <script>
+        function changeImage(imageUrl) {
+          var imageElement = document.getElementById("image");
+          imageElement.src = imageUrl;
+        }
+      </script>
+
     <script>
 particlesJS("particles", {
   particles: {
