@@ -78,6 +78,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+window.onload = function() {
+    var image = document.getElementById('image');
+    var images = ['../../images/main/profile1.png', '../../images/main/profile.png'];
+    var index = 0;
+  
+    setInterval(function() {
+      image.classList.add('flip');
+      setTimeout(function() {
+        image.classList.remove('flip');
+      }, 1500); // Remove the flip class after 0.5 seconds
+  
+      index = 1 - index; // This will switch between 0 and 1
+      image.src = images[index];
+    }, 5000); // 5000 milliseconds = 5 seconds
+  };
+
+
+
 const arrowUp = document.querySelector(".arrow-up");
 document.addEventListener('scroll', () => {
     if(window.scrollY > homeHeight /2){

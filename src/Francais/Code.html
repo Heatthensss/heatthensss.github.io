@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Juet Portfolio</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <script src="https://kit.fontawesome.com/c233cb2fc3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+<body>
+    <div id="all">
+    <div id="particles"></div>
+    <section id="education" class="section section__container">
+      <a class="fa fa-arrow-left arrow" href="../../index.html"></a>
+      <h2 style="font-size: 60px;">Projet Code :</h2>
+      <div class="projets" id="projets">
+        <div class="card-container">
+    
+          <div class="card">
+            <img src="../../images/Projet/Code/JOParis.png" alt="JO_Paris">
+            <div class="card-content">
+                <h3>JO Paris</h3>
+                <p>JO Paris est un projet scolaire réalisé en laravel. On peut créer un compte et se connecter. Une fois connecté, on peut créer un sport, uniquement le créateur peut le modifier, supprimer et ajouter une image. Il y a également des comptes administrateurs qui permettent de modifier et supprimer tout les sports.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../../images/Projet/Code/TraverseDesert.jpg" alt="TraverseDesert">
+            <div class="card-content">
+                <h3>Traversé du désert</h3>
+                <p>La traversé du désert est projet scolaire en python sans interface graphique. Le but est de traversé le désert sans se faire attrapé. Pour cela on a plusieurs options car il faut faire attention a la soif et la fatigue du chameau. La partie se termine lorsque le joueur a parcouru les 300km ou qu'il a été attrapé.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../../images/Projet/Code/Flatcraft.png" alt="Flatcraft">
+            <div class="card-content">
+                <h3>Flatcraft</h3>
+                <p>Flatcraft est un projet scolaire en java fx. L'objectif est de recréer un minecraft en 2d, avec une base donnée. Il y a les mêmes dimensions que minecraft.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../../images/Projet/Code/Marathon.png" alt="Marathon du web">
+            <div class="card-content">
+                <h3>Marathon du web</h3>
+                <p>Le marathon du web est un evenement organisé par l'IUT de Lens ou des étudiants de MMI et Informatique sont en groupe pendant 2 jours. L'objectif était de faire un site ou on peut créer et lire des histoires où on est le héros.</p>
+            </div>
+        </div>
+
+    </div>
+
+      </div>
+      <h1 style="font-size: 60px;">A Suivre !</h1>
+  </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        particlesJS("particles", {
+          particles: {
+            number: {
+              value: 40,
+              density: {
+                enable: true,
+                value_area: 2000
+              }
+            },
+            color: {
+              value: "#ffffff"
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 0,
+                color: "#000000"
+              },
+              polygon: {
+                nb_sides: 5
+              },
+              image: {
+                src: "img/github.svg",
+                width: 100,
+                height: 100
+              }
+            },
+            opacity: {
+              value: 0.5,
+              random: false,
+              anim: {
+                enable: false,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false
+              }
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                enable: false,
+                speed: 40,
+                size_min: 0.1,
+                sync: false
+              }
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#ffffff",
+              opacity: 0.4,
+              width: 1
+            },
+            move: {
+              enable: true,
+              speed: 6,
+              direction: "none",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+              attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200
+              }
+            }
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: {
+                enable: false,
+                mode: "repulse"
+              },
+              onclick: {
+                enable: false,
+                mode: "push"
+              },
+              resize: true
+            },
+            modes: {
+              grab: {
+                distance: 400,
+                line_linked: {
+                  opacity: 1
+                }
+              },
+              bubble: {
+                distance: 400,
+                size: 40,
+                duration: 2,
+                opacity: 8,
+                speed: 3
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4
+              },
+              push: {
+                particles_nb: 4
+              },
+              remove: {
+                particles_nb: 2
+              }
+            }
+          },
+          retina_detect: true
+        });
+            </script>
